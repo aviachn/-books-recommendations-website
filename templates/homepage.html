@@ -1,0 +1,107 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Book Club</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'logo.PNG' %}">
+        <link rel = "stylesheet" href ="{% static 'homepage_style.css' %}">
+    </head>
+    <body>
+        <div class="top">
+            <div class="topLeft">
+                <p>READING IS THE <br>HIDDEN LANGUAGE <br>OF THE SOUL</p>
+                <h4>The Books Club</h4>
+                <nav>
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'articles:list' %}"><button class="read_more"><strong>Read More</strong></button></a>
+                    {% else %}
+                    <a href="{% url 'accounts:login' %}"><button class="login"><strong>Login</strong></button></a>
+                    <a href="{% url 'accounts:signup' %}"><button class="signup"><strong>Signup</strong></button></a>
+                    {% endif %}
+                </nav>
+            </div>
+                
+        </div> 
+        
+        <div class="buttom">
+            <img class="part1" src="{% static 'coffee.jpg' %}" />
+           
+            <section class="part2">
+                 <p>“So many books, so little time.” </p>
+                     <p class="qoute_by">― Frank Zappa</p>
+            </section>
+            
+            <section class="part3">
+                
+            </section>
+            
+            <section class="part4">
+            
+            </section>
+            <section class="part5">
+                
+            </section>
+            <img class="img_part6" src="{% static 'guy.png' %}" />
+            <section class="part6">
+            
+            </section>
+            <section class="part7">
+                  <p>“She read books as one would breathe air, to fill up and live.”</p>
+                <p class="qoute_by">  ― Annie Dillard, The Living</p>
+            </section>
+            <img class="part8" src="{% static 'girl.jpg' %}" />
+            <section class="part9">
+                
+            </section>
+            <section class="part10">
+            
+            </section>
+            <section class="part11">
+            
+            </section>
+            <section class="part12">
+                
+                
+            </section>
+            <section class="part13">
+                   
+            </section>
+            <img class="part14"  src="{% static 'office.jpg' %}"/>
+            <section class="part15">
+                 <p> “A room without books is like a body without a soul.”</p>
+                <p class="qoute_by"> ― Marcus Tullius Cicero</p>
+            </section>
+            
+            <section class="part16">
+                <p>“I have always imagined that Paradise will be a kind of library.”</p>
+                <p class="qoute_by">― Jorge Luis Borges</p>
+            </section>
+            <section class="part17">
+                
+            </section>
+            <img class="part18"  src="{% static 'books_shelf.jpg' %}"/>
+            
+        </div>
+        
+        <div class="subsribe">
+            <p class="sign">SIGN UP FOR EMAIL UPDATES AND MORE</p>
+            
+            <div>
+            <input class="email" type="" placeholder=" your@emailAddress.com" required="">
+            <button > Subscribe </button>
+            </div>
+            
+            <p class="allRights">© ALL RIGHTS RESERVED<!--<br> MADE BY AVIA COHEN--></p> 
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li>HOME</li>
+                 <li>PRIVACY</li>
+                 <li>TERMS</li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

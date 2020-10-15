@@ -1,0 +1,31 @@
+{% load static from staticfiles %}
+
+    
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'logo.PNG' %}">
+        <link rel = "stylesheet" href ="{% static 'styleAccounts.css' %}">
+    </head>
+    <body>
+        
+         <form class="site-form" action="{% url 'accounts:login' %}" method="post">
+                {% csrf_token %}
+                {{form}}
+                {% if request.GET.next %}
+                <input type="hiden" name="next" value="{{ request.GET.next }}">
+                {% endif %}
+                <input type="submit" value="Login">
+        </form>
+        
+        <aside>
+            <div class="white"></div>
+            <div class="purple"></div>
+            <div class="darkpurple"></div>
+            <div class="brown"></div>
+        </aside>
+        
+    </body>
+</html>

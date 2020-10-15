@@ -1,0 +1,71 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="{% static 'logo.PNG' %}">
+        <link rel = "stylesheet" href ="{% static 'style.css' %}">
+    </head>
+    <body>
+        
+        <header class="bar">
+            <a class="logo" href="{% url 'home' %}"><img src="{% static 'logo.PNG' %}" width="50px" height="50px"></a>
+            <nav>
+                <ul>
+                    {% if user.is_authenticated %}
+                    
+                    <li> 
+                        <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                        {% csrf_token %} <!--Security reasons-->
+                        <button type="submit">Logout</button>
+                        </form>
+                    </li>
+                     <li> 
+                        <a href="{% url 'articles:create' %}" class="highlight">New Article</a>
+                    </li>
+                    
+                    {% else %}
+                    <li> 
+                        <a href="{% url 'accounts:login' %}">Login</a>
+                    </li>
+                    <li> 
+                        <a href="{% url 'accounts:signup' %}">Signup</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        
+        
+        
+        
+        <div class="wrapper">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+        
+        
+        
+        
+        <div class="subsribe">
+            <p class="sign">SIGN UP FOR EMAIL UPDATES AND MORE</p>
+            
+            <div>
+            <input class="email" type="" placeholder=" your@emailAddress.com" required="">
+            <button > Subscribe </button>
+            </div>
+            
+            <p class="allRights">© ALL RIGHTS RESERVED<!--<br> MADE BY AVIA COHEN--></p> 
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li>HOME</li>
+                 <li>PRIVACY</li>
+                 <li>TERMS</li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,482 @@
+/*BASE_LAYOUT.HTML*/
+body {
+    margin: 0;
+}
+
+/*body *{
+    font-family: fantasy;
+}*/
+
+/*top page*/
+/*h2, h3, h4, h5{
+    font-weight: normal;
+    /*margin: 0;
+}
+
+a, a:hover, a:visited{
+    color: burlywood;
+}*/
+
+header{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0 90px;
+}
+
+.logo{
+    
+  margin-top: 10px;
+    margin-bottom: 0;
+}
+
+nav{
+    justify-self: end;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav button{
+    font-family: Levenim MT;
+    font-weight: bold;
+    background: #bc8f8f;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+    height: 30px;
+    width: 70px;
+    padding: 1px;
+    border: 0px solid;
+    border-radius: 2px;
+}
+
+nav button:hover{
+    background: white;
+    color: #bc8f8f;
+}
+
+.highlight{
+    font-family: Levenim MT;
+    font-weight: bold;
+    color: white;
+    background:burlywood;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+    height: 30px;
+    width: 70px;
+    padding: 3.5px 6px;
+    border: 0px solid;
+    border-radius: 2px;
+    text-decoration: none; 
+}
+
+.highlight:hover{
+    background: white;
+    color: burlywood;
+}
+
+/*middle page*/
+.wrapper{
+        /*border-bottom:  0.1em solid black;*/
+}
+
+div.wrapper h1{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.4em;
+}
+
+/*the butttom of the page*/
+.subsribe{
+    font-family:sans-serif;
+    margin: 0;
+    padding: 30px 0 0;
+    width: 100%;
+    background-color: #c2b6c8;
+}
+
+.sign{
+    padding: 0 34.5%;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}
+
+.subsribe div{
+    padding: 0 34%;
+}
+
+.subsribe button{
+    font-family:sans-serif;
+    height: 42px;
+    width: 100px;
+    padding: 12px;
+    border: 0px solid;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    /*background-color: #b992a9;*/
+    cursor: pointer;
+}
+
+.subsribe button:hover{
+    cursor: pointer;
+    border: 1.5px solid black;
+    background-color: white;
+    color: black;
+}
+
+.email{
+    width: 220px;
+    padding: 5.5px 10px;
+    border: 0.1em solid #000;
+    border-radius: 8px;
+    /*color: black;*/
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 24px;
+}
+
+.allRights{
+    font-weight: bold;
+    padding: 30px 44%;
+    margin: 0;
+    font-size: 0.5em;
+    color: black;
+}
+
+.menu{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:black;
+}
+
+.menu ul{
+    padding: 5px 0;
+    margin: 0;
+}
+
+.menu li{
+    color: white;
+    font-weight: bold;
+    display: inline;
+    padding: 0 14%;
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*ARTICLE_LIST.HTML*/
+.articles{
+    max-width: 960px;
+    margin: 50 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    
+}
+
+.article{
+    background-color: #f3eff5;
+    width: 100%;
+    height: 500px;
+    border: 1px solid burlywood;
+    border-radius: 3em;
+    position: relative;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.article h2{
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 30px 0 30px;
+    max-height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.article h2 a{
+    max-height: 70px;
+    padding: 0;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: 9b7046;
+    /*background-color: black;*/
+    margin: 0;
+    
+}
+
+.article h2 a:hover{
+    cursor: pointer;
+}
+
+.snippet{
+    letter-spacing: 0.03em;
+    font-size: 0.7em;
+    font-family: fantasy;
+    padding: 10px 30px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.article .date{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 3% 6%;
+    color: #c2b6c8;
+    font-size: 1.1em;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.article .author{
+    display: inline;
+    letter-spacing: 0.02em;
+    font-family: fantasy;
+    /*color: #f3eff5;*/
+    color: white;
+    border-bottom-right-radius: 0.3em;
+    padding: 10px;
+    background: burlywood;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*ARTICLE_DETAIL.HTML*/
+.article_detail{
+    margin: 0;
+}
+
+    .top_img{
+        width: 100%;
+        height: 150px;
+    }
+
+    section{
+        background-color: #e2e2e9;
+        margin: 0;
+    }
+        
+        section h2{
+            font-family:  Brush Script MT, Brush Script Std, cursive;
+            color: ghostwhite;
+            /*color:floralwhite;
+            color: burlywood;*/
+            font-size: 6em;
+            max-height: auto;
+            max-width: auto;
+            margin: 0 37%;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            top:  -70px;
+}
+
+        .title_article {
+            margin: 0;
+            padding: 0 18%;
+            position: relative;
+            top:-70px;
+        }
+
+            .title_article p{
+                width: 200px;
+                font-family: Montserrat;
+                font-size: 1em;
+                font-weight: bold;
+                padding: 0 38% 0;
+                margin: 0;
+            }
+
+            hr{
+                width: 300px;
+                height: 0.01em;
+                border-width:0;
+                margin-bottom: 10px;
+                color:black;
+                background-color:black;
+            }
+
+        .title_article:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+        .article_body{
+            margin: 0 20%;
+            font-family: Montserrat;
+            letter-spacing: 0.02em;
+            /*line-height: 1.5em;*/
+}
+
+        .article_author{
+            margin: 10px 20% 0 20%;
+            padding-bottom: 60px;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            letter-spacing: 0.02em;
+            font-size: 1.8em;
+}
+
+
+    aside{
+        height: 700px;
+        background-color: whitesmoke;
+        border-top: 0.1em solid black;
+        border-bottom: 0.1em solid black;
+    }
+
+        .img_article{
+            /*background-color: #bc8f8f;*/
+            background-color:  #ddccbb;
+            float: right;
+            top: 100px;
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+            position: relative;
+            height: 75%;
+            width: 50%;
+        }
+
+            .img_article img{
+                border-radius: 1em;
+                float: left;
+                height: 400px;
+                width: 400px;
+                position: relative;
+                right: 30%;
+                top: 50px;
+            }
+
+    .quote{
+        /*background-color: mistyrose;*/
+        height: 200px;
+        width: 50%;
+    }
+        
+        .the_quoute{
+            margin-top: 160px;
+            padding: 80px;
+            width: auto;
+            position: relative;
+            max-width: auto;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            color: black;
+            font-size: 4em;
+        }
+
+
+
+/*aside:after{
+    display: block;
+    content: "";
+    clear: both;
+}*/
+
+
+
+
+/*ARTICLE_CREATE.HTML*/
+.create-article, .sign_up{
+    font-family: fantasy;
+    border-bottom: 0.01em solid black;
+}
+
+.create-article h2, .sign_up h2{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 5em;
+    position: relative;
+    float: right;
+    top: -120px;
+    right: 25%;
+}
+
+.sign_up h2{ 
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 5em;
+    position: relative;
+    float: right;
+    top: -120px;
+    right: 45%;
+}
+
+#id_thumb button{
+    
+}
+
+
+/*LOGIN.HTML   +  ARTICLE_CREATE.HTML*/
+.site-form{
+    margin: 60px;
+    border:  2px solid burlywood;
+    border-radius: 1em;
+    padding: 20px;
+}
+    
+.site-form input, .site-form textarea{
+    display: block;
+    margin:  15px 0;
+    padding: 10px;
+}
+
+.helptext, .helptext ul {
+    margin: 0 auto 20px;
+    color: #bbb;
+    font-size: 0.9em;
+    display: block;
+}
+
+.errorlist li{
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid indianred;
+    color: indianred;
+    margin: 10px 0;
+}
+
+.errorlist {
+    padding: 0;
+}
+
+.site-form input[type="submit"]{
+    background: #bc8f8f;
+    border: 0;
+    padding: 6px;
+    height: 35px;
+    font-weight: bold;
+    color: white;
+    /*color: gainsboro;*/
+    font-size: 1em;
+    border-radius: 4px;
+    margin: 10px 0;
+}
