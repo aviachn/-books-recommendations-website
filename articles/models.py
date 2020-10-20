@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-# Create your models here.
-class Article(models.Model):     #the class is going to inherit from models.Model, it's inbuild in django, it's inherit some basic functionality that all models will have
+
+class Article(models.Model):     #the class is going to inherit from models.Model, it's inbuild in django, inherit some basic functionality that all models will have
     title = models.CharField(max_length = 100)
     slug = models.SlugField()   #the URL addres of the article
     body = models.TextField()

@@ -1,22 +1,10 @@
 /*BASE_LAYOUT.HTML*/
+
 body {
     margin: 0;
 }
 
-/*body *{
-    font-family: fantasy;
-}*/
-
-/*top page*/
-/*h2, h3, h4, h5{
-    font-weight: normal;
-    /*margin: 0;
-}
-
-a, a:hover, a:visited{
-    color: burlywood;
-}*/
-
+/*top*/
 header{
     
     display: grid;
@@ -26,8 +14,7 @@ header{
 }
 
 .logo{
-    
-  margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -81,19 +68,14 @@ nav button:hover{
     color: burlywood;
 }
 
-/*middle page*/
-.wrapper{
-        /*border-bottom:  0.1em solid black;*/
-}
-
 div.wrapper h1{
     text-align: center;
     margin: 100px auto;
     font-size: 2.4em;
 }
 
-/*the butttom of the page*/
-.subsribe{
+/*butttom*/
+.subscribe{
     font-family:sans-serif;
     margin: 0;
     padding: 30px 0 0;
@@ -108,11 +90,11 @@ div.wrapper h1{
     color: black;
 }
 
-.subsribe div{
+.subscribe div{
     padding: 0 34%;
 }
 
-.subsribe button{
+.subscribe button{
     font-family:sans-serif;
     height: 42px;
     width: 100px;
@@ -128,7 +110,7 @@ div.wrapper h1{
     cursor: pointer;
 }
 
-.subsribe button:hover{
+.subscribe button:hover{
     cursor: pointer;
     border: 1.5px solid black;
     background-color: white;
@@ -186,8 +168,9 @@ div.wrapper h1{
 
 /*ARTICLE_LIST.HTML*/
 .articles{
+    min-height: 400px;
     max-width: 960px;
-    margin: 50 auto 0 auto;
+    margin: 50px auto 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
@@ -205,7 +188,7 @@ div.wrapper h1{
     margin-bottom: 30px;
 }
 
-.article h2{
+    .article h2{
     font-size: 2em;
     margin: 0;
     padding: 20px 30px 0 30px;
@@ -215,7 +198,7 @@ div.wrapper h1{
     white-space: nowrap;
 }
 
-.article h2 a{
+        .article h2 a{
     max-height: 70px;
     padding: 0;
     font-family: Brush Script MT, Brush Script Std, cursive;
@@ -227,7 +210,7 @@ div.wrapper h1{
     
 }
 
-.article h2 a:hover{
+        .article h2 a:hover{
     cursor: pointer;
 }
 
@@ -240,7 +223,7 @@ div.wrapper h1{
     margin-bottom: 10px;
 }
 
-.article .date{
+    .article .date{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -250,7 +233,7 @@ div.wrapper h1{
     font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
-.article .author{
+    .article .author{
     display: inline;
     letter-spacing: 0.02em;
     font-family: fantasy;
@@ -266,11 +249,6 @@ div.wrapper h1{
 }
 
 
-
-
-
-
-
 /*ARTICLE_DETAIL.HTML*/
 .article_detail{
     margin: 0;
@@ -279,6 +257,7 @@ div.wrapper h1{
     .top_img{
         width: 100%;
         height: 150px;
+        margin-bottom: 0;
     }
 
     section{
@@ -287,26 +266,20 @@ div.wrapper h1{
     }
         
         section h2{
-            font-family:  Brush Script MT, Brush Script Std, cursive;
-            color: ghostwhite;
-            /*color:floralwhite;
-            color: burlywood;*/
-            font-size: 6em;
-            max-height: auto;
-            max-width: auto;
-            margin: 0 37%;
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-            top:  -70px;
+            font-size: 4em;
+            position: absolute;
+            top: 28%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            color: whitesmoke;
 }
 
         .title_article {
             margin: 0;
-            padding: 0 18%;
+            padding: 100px 18% 0;
             position: relative;
-            top:-70px;
+            top:-50px;
         }
 
             .title_article p{
@@ -316,11 +289,13 @@ div.wrapper h1{
                 font-weight: bold;
                 padding: 0 38% 0;
                 margin: 0;
+                top: 160px;
+                
             }
 
             hr{
                 width: 300px;
-                height: 0.01em;
+                height: 0.06em;
                 border-width:0;
                 margin-bottom: 10px;
                 color:black;
@@ -328,16 +303,16 @@ div.wrapper h1{
             }
 
         .title_article:after{
-    display: block;
-    content: "";
-    clear: both;
+            display: block;
+            content: "";
+            clear: both;
 }
 
         .article_body{
             margin: 0 20%;
             font-family: Montserrat;
             letter-spacing: 0.02em;
-            /*line-height: 1.5em;*/
+            line-height: 1.5em;
 }
 
         .article_author{
@@ -361,64 +336,111 @@ div.wrapper h1{
             background-color:  #ddccbb;
             float: right;
             top: 100px;
-            border-top-left-radius: 1em;
-            border-bottom-left-radius: 1em;
+            border-top-left-radius: 0.2em;
+            border-bottom-left-radius: 0.2em;
             position: relative;
             height: 75%;
             width: 50%;
         }
 
             .img_article img{
-                border-radius: 1em;
+                border-radius: 0.2em;
                 float: left;
                 height: 400px;
-                width: 400px;
+                width: 300px;
                 position: relative;
-                right: 30%;
+                right: 25%;
                 top: 50px;
             }
 
     .quote{
         /*background-color: mistyrose;*/
-        height: 200px;
+        height: minmax(200px,300px);
         width: 50%;
     }
         
         .the_quoute{
-            margin-top: 160px;
+            margin-top: 100px;
             padding: 80px;
             width: auto;
             position: relative;
             max-width: auto;
             font-family: Brush Script MT, Brush Script Std, cursive;
-            color: black;
-            font-size: 4em;
+            color: #8e745d;
+            font-size: 2.5em;
         }
 
-
-
-/*aside:after{
-    display: block;
-    content: "";
-    clear: both;
-}*/
 
 
 
 
 /*ARTICLE_CREATE.HTML*/
-.create-article, .sign_up{
+.create-article{
     font-family: fantasy;
     border-bottom: 0.01em solid black;
 }
 
-.create-article h2, .sign_up h2{
+    .create-article h2{
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 5em;
     position: relative;
     float: right;
     top: -120px;
     right: 25%;
+}
+
+#id_body, #id_quote{
+    font-family: sans-serif;
+}
+
+
+
+
+
+/*LOGIN.HTML   + SIGNUP.HTML  +  ARTICLE_CREATE.HTML*/
+.site-form{
+    margin: 60px;
+    border:  2px solid burlywood;
+    border-radius: 1em;
+    padding: 20px 20px 20px 40px;
+}
+    
+    .site-form input, .site-form textarea{
+    display: block;
+    margin:  15px 0;
+    padding: 10px;
+}
+
+    .site-form input[type="submit"]{
+        background: #bc8f8f;
+        border: 0;
+        padding: 6px;
+        height: 35px;
+        font-weight: bold;
+        color: white;
+        /*color: gainsboro;*/
+        font-size: 1em;
+        border-radius: 4px;
+        margin: 10px 0;
+    }
+
+.helptext, .helptext ul {
+    margin: 0 auto 20px;
+    color: #bbb;
+    font-size: 0.9em;
+    display: block;
+}
+
+.errorlist {
+    padding: 0;
+}
+
+    .errorlist li{
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid indianred;
+    color: indianred;
+    margin: 10px 0;
 }
 
 .sign_up h2{ 
@@ -428,55 +450,4 @@ div.wrapper h1{
     float: right;
     top: -120px;
     right: 45%;
-}
-
-#id_thumb button{
-    
-}
-
-
-/*LOGIN.HTML   +  ARTICLE_CREATE.HTML*/
-.site-form{
-    margin: 60px;
-    border:  2px solid burlywood;
-    border-radius: 1em;
-    padding: 20px;
-}
-    
-.site-form input, .site-form textarea{
-    display: block;
-    margin:  15px 0;
-    padding: 10px;
-}
-
-.helptext, .helptext ul {
-    margin: 0 auto 20px;
-    color: #bbb;
-    font-size: 0.9em;
-    display: block;
-}
-
-.errorlist li{
-    padding: 10px;
-    list-style-type: none;
-    border: 1px solid indianred;
-    color: indianred;
-    margin: 10px 0;
-}
-
-.errorlist {
-    padding: 0;
-}
-
-.site-form input[type="submit"]{
-    background: #bc8f8f;
-    border: 0;
-    padding: 6px;
-    height: 35px;
-    font-weight: bold;
-    color: white;
-    /*color: gainsboro;*/
-    font-size: 1em;
-    border-radius: 4px;
-    margin: 10px 0;
 }

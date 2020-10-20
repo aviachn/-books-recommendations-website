@@ -100,10 +100,10 @@ nav{
 .buttom{
     height: 1000px;
     margin: 0;
-    border-bottom: 3px solid black;
-    border-top: 2px solid #60401f;
+    border-bottom: 3px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
     /*background-image: url(/static/coffee.jpg);*/
-    background-color:#60401f;
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-auto-rows: minmax(40px, 200px);
@@ -261,10 +261,21 @@ nav{
 
 .buttom .part16{
     grid-column: 1/4;
+    width: 100%;
+    height: 100%;
+}
+
+.buttom .part17{
+    grid-column: 4/5;
+    background-color: #d3c1ab;
+}
+
+.buttom .part18{
+    grid-column: 5/8;
     background-color: #ddd5d5;;
 }
 
-.buttom .part16 p{
+.buttom .part18 p{
     font-family:fantasy;
     color:#aaaabb;
     font-size: 1.2em;
@@ -272,21 +283,10 @@ nav{
     padding: 10px;
 }
 
-.buttom .part16 .qoute_by{
+.buttom .part18 .qoute_by{
     float: right;
     font-size: 0.9em;
     margin-top: 50px;
-}
-
-.buttom .part17{
-    grid-column: 4/5;
-    background-color: #ede6de;
-}
-
-.buttom .part18{
-    grid-column: 5/8;
-    width: 100%;
-    height: 100%;
 }
 
 .subsribe{
