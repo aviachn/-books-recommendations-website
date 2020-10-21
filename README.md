@@ -41,6 +41,6 @@ def article_create(request):
 
 ### How To Use
 1. After installing 
-2. open your command line and run <cd THE_PATH> when THE_PATH is the path where you saved the project.
-3. run <python manage.py runserver>
-4. open you explorer and in the url line insert <http://localhost:8000/> 
+2. open your command line and run `<cd THE_PATH>` when THE_PATH is the path where you saved the project.
+3. run `<python manage.py runserver>`
+4. open you explorer and in the url line insert `<http://localhost:8000/>`
