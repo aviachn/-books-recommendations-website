@@ -13,7 +13,7 @@ Django is a web application framework built on Python. Django allows to easily c
 
 ### Screenshots
 As 
-The articles available the users only after they logged in- the "Log in" and "Sign up" buttons disapir from the homepage and the "Read More" button appears instead.
+The articles available the users only after they logged in- the "Login" and "Signup" buttons disapir from the homepage and the "Read More" button appears instead.
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/72604721/96680121-949ba480-137d-11eb-9581-0d463638f2b0.gif)
 
 
@@ -21,22 +21,23 @@ The articles available the users only after they logged in- the "Log in" and "Si
 
 ### Code Example
 The example I decided to show is creating an article-
-The page where the user can upload his article required user authentication, therefore above the function we have a command that that making sure the user logged in. If the user is not, the "Log in" page will show up.
+The page where the user can upload his article required user authentication, therefore above the function we have a command that making sure the user logged in. If the user is not, the "Login" page will show up.
 The function gets a request, if it's not a POST request the same page, with blank fields in the form will show up to the user again.
 If it is a POST request the function will check rather the details in the fields are valid, if it is we will save them attached to the user who made the request and send the user back to the page where all the articles are, including the one that he created right now.
 ```
-@login_required(login_url="/accounts/login/")
-def article_create(request):
-    if request.method =='POST':
-        form = forms.CreateArticle(request.POST, request.FILES)
-        if form.is_valid():
-            instance = form.save(commit=False)
-            instance.author = request.user 
-            instance.save()                 
-            return redirect('articles:list')
-    else: 
+@login_required(login_url="/accounts/login/")                               #if the user isn't logged in send him to the login page
+def article_create(request):                                            
+    if request.method =='POST':                                             #if it's a GET request
+        form = forms.CreateArticle(request.POST, request.FILES)             # save the request in form variable 
+        if form.is_valid():                                                 #check if the data request that saved in the form is valid
+            instance = form.save(commit=False)                              #the request validation saved in instance variable 
+            instance.author = request.user                                  #save in author field the name of the user who created the article
+            instance.save()                                                 
+            return redirect('articles:list')                                #return the list article page after update
+    else:                                                                   #if it's a POST request return the same page with an empty form
         form = forms.CreateArticle()
     return render(request, 'articles/article_create.html', {'form':form})
 ```
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/72604721/96689550-34136400-138b-11eb-9432-30c559aa07a0.gif)
 
 ### How To Use
