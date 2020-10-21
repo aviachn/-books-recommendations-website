@@ -16,8 +16,11 @@ Django is a Python web application framework. Django allows to easily create dyn
 ### Screenshots
 As the user navigate to the homepage the homepage and the login\ signup are the only available page until user loging in.
 The user can press the login\ signup buttons and with the help of Django, both process help the user to get into the website in order to read\write an article or keep showing the user the errors (such as invalid password or using user name that already exist).  <br/>
+<br/>
 ![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/72604721/96691368-7d64b300-138d-11eb-8337-4d7e092b7cfe.gif)  <br/>
+<br/>
 The articles available the users only after they logged in- the "Login" and "Signup" buttons disapir from the homepage and the "Read More" button appears instead.   <br/>
+<br/>
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/72604721/96680121-949ba480-137d-11eb-9581-0d463638f2b0.gif)<br/>
 
 
@@ -40,7 +43,6 @@ def article_create(request):
         form = forms.CreateArticle()
     return render(request, 'articles/article_create.html', {'form':form})
 ```
-  <br/>
 ![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/72604721/96689550-34136400-138b-11eb-9432-30c559aa07a0.gif) <br/>
 
 
