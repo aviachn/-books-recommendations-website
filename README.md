@@ -9,3 +9,7 @@ Django is a web application framework built on Python. Django allows to easily c
 * User authentication
 * Templating language
 * Routing and more
+
+
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/72604721/96680121-949ba480-137d-11eb-9581-0d463638f2b0.gif)
