@@ -12,7 +12,8 @@ Django is a Python web application framework. Django allows to easily create dyn
 
 
 ### Screenshots
-As 
+As the user navigate to the homepage the homepage and the login\ signup are the only available page until user loging in.
+The user can press the login\ signup buttons and with the help of Django, both process help the user to get into the website in order to read\write an article or keep showing the user the errors (such as invalid password or using user name that already exist).
 ![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/72604721/96691368-7d64b300-138d-11eb-8337-4d7e092b7cfe.gif)
 The articles available the users only after they logged in- the "Login" and "Signup" buttons disapir from the homepage and the "Read More" button appears instead.
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/72604721/96680121-949ba480-137d-11eb-9581-0d463638f2b0.gif)
@@ -40,7 +41,6 @@ def article_create(request):
 ![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/72604721/96689550-34136400-138b-11eb-9432-30c559aa07a0.gif)
 
 ### How To Use
-1. After installing 
-2. open your command line and run `<cd THE_PATH>` when THE_PATH is the path where you saved the project.
-3. run `<python manage.py runserver>`
-4. open you explorer and in the url line insert `<http://localhost:8000/>`
+1. Navigate to the path where the project at, in order to do that open your command line tool and write `<cd THE_PATH>` when THE_PATH is the path where you saved the project, and press enter.
+2. run `<python manage.py runserver>`.
+3. open you browser and in the url line insert `<http://localhost:8000/>` or `<http://127.0.0.1:8000/>`
