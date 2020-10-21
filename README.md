@@ -4,8 +4,8 @@ A public books vlog- all website users can share and post their opinions, ideas 
 ### Motivation
 As a book lover, I would like to know what people recommend reading and why, what made a book they read to be that great and also, share my ideas with others after reading book. I think that there is something unexplainable about sharing your thoughts after you read an enthusiastic book, a book that made you feel excited or inspired. That you can't keep your hands off of it and you want evreyone to enjoy it.   
 
-### Frameworks
-Django is a web application framework built on Python. Django allows to easily create dynamic web apps and have many features like:
+### Framework
+Django is a Python web application framework. Django allows to easily create dynamic web apps and have many features like:
 * User authentication
 * Templating language
 * Routing and more
@@ -13,11 +13,10 @@ Django is a web application framework built on Python. Django allows to easily c
 
 ### Screenshots
 As 
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/72604721/96691368-7d64b300-138d-11eb-8337-4d7e092b7cfe.gif)
 The articles available the users only after they logged in- the "Login" and "Signup" buttons disapir from the homepage and the "Read More" button appears instead.
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/72604721/96680121-949ba480-137d-11eb-9581-0d463638f2b0.gif)
 
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/72604721/96680349-0116a380-137e-11eb-8288-bef0a49a3ebd.gif)
 
 ### Code Example
 The example I decided to show is creating an article-
@@ -41,3 +40,7 @@ def article_create(request):
 ![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/72604721/96689550-34136400-138b-11eb-9432-30c559aa07a0.gif)
 
 ### How To Use
+1. After installing 
+2. open your command line and run <cd THE_PATH> when THE_PATH is the path where you saved the project.
+3. run <python manage.py runserver>
+4. open you explorer and in the url line insert <http://localhost:8000/> 
