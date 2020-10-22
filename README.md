@@ -15,7 +15,7 @@ Django is a Python web application framework. Django allows to easily create dyn
 
 ### Screenshots
 As the user navigate to the homepage the homepage and the login\ signup are the only available page until user loging in.
-The user can press the login\ signup buttons and with the help of Django, both process help the user to get into the website in order to read\write an article or keep showing the user the errors (such as invalid password or using user name that already exist).  <br/>
+The user can press the login\ signup buttons and with the help of Django, keep showing the user the errors (such as invalid password or using user name that already exist) or redirecting users to the articles.  <br/>
 <br/>
 ![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/72604721/96691368-7d64b300-138d-11eb-8337-4d7e092b7cfe.gif)  <br/>
 <br/>
