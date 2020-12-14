@@ -47,6 +47,6 @@ def article_create(request):
 
 
 ### How To Use
-1. Navigate to the path where the project at, in order to do that open your command line tool and write `<cd THE_PATH>` when THE_PATH is the path where you saved the project, and press enter.
+1. Navigate to the path where's the project at, in order to do that open your command line tool and write `<cd THE_PATH>` when THE_PATH is the path where you saved the project, and press enter.
 2. run `<python manage.py runserver>`.
 3. open you browser and in the url line insert `<http://localhost:8000/>` or `<http://127.0.0.1:8000/>`
