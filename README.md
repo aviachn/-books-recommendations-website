@@ -2,9 +2,6 @@
 A public books vlog- all website users can share and post their opinions, ideas and insights about books they have read. They can add to their article their favorite quote from the book and upload an image.
 <br/>
 
-### Motivation
-As a book lover, I would like to know what people recommend reading and why, what made a book they read to be that great and also, share my ideas with others after reading book. I think that there is something unexplainable about sharing your thoughts after you read an enthusiastic book, a book that made you feel excited or inspired. That you can't keep your hands off of it and you want evreyone to enjoy it.   
-<br/>
 
 ### Framework
 Django is a Python web application framework. Django allows to easily create dynamic web apps and have many features like:
